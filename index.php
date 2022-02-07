@@ -12,3 +12,13 @@
  *
  * 5. Utilisez le chaînage des méthodes pour mettre à jour le nom et le prix en une seule ligne.
  */
+
+require './classes/VODService.php';
+
+$vod = new VODService('Netflix', 15);
+$vod2 = new VODService('Wakanim', 5);
+
+$vod->setName('Netflix')->setPrice(13);
+$vod2->setName('Wakanim')->setPrice(5);
+
+
